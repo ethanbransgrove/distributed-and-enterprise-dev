@@ -43,7 +43,7 @@ Main flow:
 Alternative and exception paths:
 
 1.  Replenished but out of season: stays unavailable, and the producer is told why.
-2.  eason ended by timer: auto-unavailable.
+2.  Season ended by timer: auto-unavailable.
 3.  Invalid update (negative stock, end date before start date): rejected back to the form.
 4.  Concurrent updates: the stock decrement is rejected if it would go below zero, and the order process is informed.
 5.  Optional: a low-stock alert threshold.
