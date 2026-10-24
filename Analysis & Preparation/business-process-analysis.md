@@ -13,13 +13,29 @@
 11. sustainability reporting
 12. education and community content
 
-## Organisational responsibilites
-- producers: own product data
-- customers: pay for the products
-- administration: approves producers for selling
-- finance
-- quality and compliance
-- external parties: payment providers and other services
+| Business process | Purpose and key activities | Main responsibility | Relationship with other processes |
+| --- | --- | --- | --- |
+| **Producer onboarding and certification verification** | x | x | x |
+| **Product listing and availability management** | x | x | x |
+| **Customer registration** | x | x | x |
+| **Product discovery** | x | x | x |
+| **Order placement** | x | x | x |
+| **Payment processing** | x | x | x |
+| **Order fulfilment** | x | x | x |
+| **Producer settlment** | x | x | x |
+| **Quality and food safety incident management** | x | x | x |
+| **Surplus produce** | x | x | x |
+| **Sustainability reportingt** | x | x | x |
+| **Education and community content** | x | x | x |
+
+
+## Organisational Responsibilites
+- **Producers:** maintain accurate product information, handle stock and seasonal availability as well as suppling relevant products and certification information.
+- **Customers:** Browse products, place orders and provide payment information through the correct channels for payment processing.
+- **Marketplace Administration:** Coordinate marketplace operations and manage producer onboarding. 
+- **Finance:** Oversee payment records, commission calculations, help producer settlements and associated audit trails for tax purposes.
+- **Quality and Compliance:** Support food safety processes, have relevant tracebility records in the event of a food safety concern, and handle product claims about organic status and other claims.
+- **External Parties:** Provide the integrations required for payment processing and organic certification verification.
 
 ## Strategic alignment
 ### business objectives
