@@ -31,7 +31,7 @@
 | **Education and community content** | Provide educational information about local food and related community activities | Marketplace operations and relevant contributors | Supports the wider marketplace mission rather than directly controlling product publication |
 
 
-## Organisational Responsibilites
+## Organisational Responsibilities
 - **Producers:** maintain accurate product information, handle stock and seasonal availability as well as suppling relevant products and certification information.
 - **Customers:** Browse products, place orders and provide payment information through the correct channels for payment processing.
 - **Marketplace Administration:** Coordinate marketplace operations and manage producer onboarding. 
