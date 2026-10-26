@@ -31,7 +31,7 @@ Triggers:
 3.  A timer event fires at season start and end.
 4.  Actors: Producer, Inventory Service, Product Catalogue Service, Notification Service. The Customer Ordering process is the external message source.
 
-Main flow:
+**Main flow:**
 
 1.  The new stock and availability data is received.
 2.  A DMN decision table applies the rule: available only if stock > 0 AND today is within the seasonal window.
@@ -40,7 +40,7 @@ Main flow:
 5.  On replenishment, the rule is re-evaluated, and the product is re-enabled only if still in season.
 6.  An audit entry is recorded for each change, which also supports the producer’s accounting and traceability needs.
 
-Alternative and exception paths:
+**Alternative and exception paths:**
 
 1.  Replenished but out of season: stays unavailable, and the producer is told why.
 2.  Season ended by timer: auto-unavailable.
