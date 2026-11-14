@@ -1,0 +1,512 @@
+{
+  "actors": [
+    {
+      "id": "d0f57b4f-6164-41ef-a8bf-ba22218dc7dc",
+      "text": "Producer",
+      "type": "istar.Actor",
+      "x": 93,
+      "y": 73,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": [
+        {
+          "id": "d7fe5fd2-98c2-439f-9d60-dd3bce9d3d94",
+          "text": "Easy-to-use product listing process",
+          "type": "istar.Quality",
+          "x": 238,
+          "y": 448,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "01b1fff4-1496-4072-9d18-dd19fe3adf05",
+          "text": "Prepare product information",
+          "type": "istar.Task",
+          "x": 411,
+          "y": 445,
+          "customProperties": {
+            "Description": "",
+            "newProperty": ""
+          }
+        },
+        {
+          "id": "f4d27631-356c-450d-a312-2e0f4f3b7d1c",
+          "text": "Make products available for sale on the marketplace",
+          "type": "istar.Goal",
+          "x": 367,
+          "y": 277,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "efe0aa11-7e4d-4ea7-9014-101187c1cd4f",
+          "text": "Submit new product listing",
+          "type": "istar.Task",
+          "x": 175,
+          "y": 318,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "def12dfb-a035-4db0-9f3a-ddddd59da853",
+          "text": "Correct missing or invalid information",
+          "type": "istar.Task",
+          "x": 556,
+          "y": 137,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "ebe65a34-7cc4-4186-b0be-f34d2ad373dd",
+          "text": "Update product quantity",
+          "type": "istar.Task",
+          "x": 188,
+          "y": 175,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "6645d2e9-9e25-4fa1-ba83-06a998793218",
+          "text": "Update seasonal availability",
+          "type": "istar.Task",
+          "x": 644,
+          "y": 291,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "1b85c157-3432-47dd-a982-55693dec0601",
+          "text": "Accurate product information",
+          "type": "istar.Quality",
+          "x": 93,
+          "y": 468,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "2931a5aa-2900-471b-8f43-c595368e01ea",
+          "text": "Minimal administrative effort",
+          "type": "istar.Quality",
+          "x": 792,
+          "y": 596,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "20c1babd-0324-4601-8693-456dd78e5586",
+          "text": "Product details",
+          "type": "istar.Resource",
+          "x": 364,
+          "y": 579,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "48d3d8b7-bc68-4400-ac65-70cbb6cee87a",
+          "text": "Inventory information",
+          "type": "istar.Resource",
+          "x": 550,
+          "y": 568,
+          "customProperties": {
+            "Description": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "baa8be86-8a23-4375-ab24-ee9a410e7137",
+      "text": "Marketplace Platform",
+      "type": "istar.Actor",
+      "x": 1050,
+      "y": 93,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": [
+        {
+          "id": "5317c16a-c71c-46ba-8c8e-0c7f0c20ef5a",
+          "text": "Maintain accurate and available product listings",
+          "type": "istar.Goal",
+          "x": 1310,
+          "y": 268,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "6431b826-ad82-4b14-b1c7-80d96d8177d5",
+          "text": "Receive product information",
+          "type": "istar.Task",
+          "x": 1564,
+          "y": 342,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "193068e5-76aa-481d-bd0a-f411205ce48c",
+          "text": "Validate mandatory information",
+          "type": "istar.Task",
+          "x": 1056.5,
+          "y": 304,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "8e8708d8-5053-4363-af76-c00f6756f24c",
+          "text": "Request correction of invalid information",
+          "type": "istar.Task",
+          "x": 1137,
+          "y": 181,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "ba68231a-134c-4597-b6da-6b73c035bd0b",
+          "text": "Verify organic certification",
+          "type": "istar.Task",
+          "x": 1185,
+          "y": 338,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "a3901cfc-43f7-4239-981b-53474b090f4c",
+          "text": "Publish validated products",
+          "type": "istar.Task",
+          "x": 1587,
+          "y": 240,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "42eae060-b8eb-43bb-85d7-60e16b0f1926",
+          "text": "Monitor available stock",
+          "type": "istar.Task",
+          "x": 1337.5,
+          "y": 134,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "f70c1a7e-6621-4125-9910-604e624dac19",
+          "text": "Set products as unavailable when stock reaches zero",
+          "type": "istar.Task",
+          "x": 1395,
+          "y": 481,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "1c5ddbf4-7b05-4ad5-b316-22351c033e83",
+          "text": "Restore product availability when stock is replenished and the availability period remains valid.",
+          "type": "istar.Task",
+          "x": 1072.5,
+          "y": 430,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "ad7ea60a-d550-45d5-840c-ed6c6f955ba7",
+          "text": "Submitted product information",
+          "type": "istar.Resource",
+          "x": 1079,
+          "y": 614,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "f05c4e40-4ddc-4c71-b743-c8c67f4eebc9",
+          "text": "Validation results",
+          "type": "istar.Resource",
+          "x": 1297,
+          "y": 613.5,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "1285027b-e398-465d-9ea8-ef3cecf83f2b",
+          "text": "Certification verification results",
+          "type": "istar.Resource",
+          "x": 1447,
+          "y": 594.5,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "37154a6c-ea2b-420f-9f43-172d95d3dd8d",
+          "text": "Published product records",
+          "type": "istar.Resource",
+          "x": 1176,
+          "y": 543,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "63e4c597-73c4-4927-8cf7-1fdd29235081",
+          "text": "Inventory records",
+          "type": "istar.Resource",
+          "x": 1615,
+          "y": 561,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "94761fa3-fe1c-4662-8534-f2cc00adcd7b",
+          "text": "Seasonal availability records",
+          "type": "istar.Resource",
+          "x": 1350,
+          "y": 665,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "3174fb18-57c7-41df-86f0-341a0ece2c74",
+          "text": "Accurate product information",
+          "type": "istar.Quality",
+          "x": 1685,
+          "y": 422,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "b836e724-ff7c-45fc-b644-69dcd83cbbd6",
+          "text": "Reliable product availability",
+          "type": "istar.Quality",
+          "x": 1543,
+          "y": 427.5,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "89f74193-a1b5-4f22-b98a-2a09e1d30636",
+          "text": "Trustworthy certification information",
+          "type": "istar.Quality",
+          "x": 1378,
+          "y": 400.5,
+          "customProperties": {
+            "Description": ""
+          }
+        },
+        {
+          "id": "e6e1a09a-53e7-4428-a6f2-3330f33b3f17",
+          "text": "Efficient validation process",
+          "type": "istar.Quality",
+          "x": 1619,
+          "y": 637.5,
+          "customProperties": {
+            "Description": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "c00ea8cd-9f97-4123-960f-5a03e78ba8b1",
+      "text": "Marketplace Administator",
+      "type": "istar.Actor",
+      "x": 838,
+      "y": 985,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    },
+    {
+      "id": "67b90332-cd02-4639-b2c4-198e6a759d20",
+      "text": "External: Payment Service Provider",
+      "type": "istar.Actor",
+      "x": 468,
+      "y": 956,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    },
+    {
+      "id": "64a01b5c-edde-44d0-a9a2-9df8cc6ef35b",
+      "text": "External: Organic Certification Service",
+      "type": "istar.Actor",
+      "x": 1151,
+      "y": 957,
+      "customProperties": {
+        "Description": ""
+      },
+      "nodes": []
+    }
+  ],
+  "orphans": [],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "6ff6d05a-465c-4241-ad74-e56a77bafd5a",
+      "type": "istar.OrRefinementLink",
+      "source": "01b1fff4-1496-4072-9d18-dd19fe3adf05",
+      "target": "f4d27631-356c-450d-a312-2e0f4f3b7d1c"
+    },
+    {
+      "id": "a0955fd6-0594-4a5c-b8dd-b04bc594a7fa",
+      "type": "istar.OrRefinementLink",
+      "source": "efe0aa11-7e4d-4ea7-9014-101187c1cd4f",
+      "target": "f4d27631-356c-450d-a312-2e0f4f3b7d1c"
+    },
+    {
+      "id": "80ffe0fa-addf-42f4-917a-ba5a7bed4b1d",
+      "type": "istar.OrRefinementLink",
+      "source": "def12dfb-a035-4db0-9f3a-ddddd59da853",
+      "target": "f4d27631-356c-450d-a312-2e0f4f3b7d1c"
+    },
+    {
+      "id": "41be570c-3e39-4d8b-b3c6-9c6eecebecac",
+      "type": "istar.OrRefinementLink",
+      "source": "ebe65a34-7cc4-4186-b0be-f34d2ad373dd",
+      "target": "f4d27631-356c-450d-a312-2e0f4f3b7d1c"
+    },
+    {
+      "id": "89115814-ba5d-491e-92d0-b1202e754b8b",
+      "type": "istar.OrRefinementLink",
+      "source": "6645d2e9-9e25-4fa1-ba83-06a998793218",
+      "target": "f4d27631-356c-450d-a312-2e0f4f3b7d1c"
+    },
+    {
+      "id": "828b52e2-9c97-4182-9462-527a57cfa9d1",
+      "type": "istar.ContributionLink",
+      "source": "efe0aa11-7e4d-4ea7-9014-101187c1cd4f",
+      "target": "d7fe5fd2-98c2-439f-9d60-dd3bce9d3d94",
+      "label": "help"
+    }
+  ],
+  "display": {
+    "d7fe5fd2-98c2-439f-9d60-dd3bce9d3d94": {
+      "width": 109.16650390625,
+      "height": 62.53324890136719
+    },
+    "01b1fff4-1496-4072-9d18-dd19fe3adf05": {
+      "width": 110.1339111328125,
+      "height": 51.02677917480469
+    },
+    "f4d27631-356c-450d-a312-2e0f4f3b7d1c": {
+      "width": 166.8125,
+      "height": 88.84375
+    },
+    "efe0aa11-7e4d-4ea7-9014-101187c1cd4f": {
+      "width": 104.3125,
+      "height": 52.34375
+    },
+    "def12dfb-a035-4db0-9f3a-ddddd59da853": {
+      "width": 124.8125,
+      "height": 63.34375
+    },
+    "ebe65a34-7cc4-4186-b0be-f34d2ad373dd": {
+      "width": 121.3125,
+      "height": 57.34375
+    },
+    "6645d2e9-9e25-4fa1-ba83-06a998793218": {
+      "width": 126.8125,
+      "height": 59.34375
+    },
+    "5317c16a-c71c-46ba-8c8e-0c7f0c20ef5a": {
+      "width": 167.8125,
+      "height": 89.84375
+    },
+    "6431b826-ad82-4b14-b1c7-80d96d8177d5": {
+      "width": 116.8125,
+      "height": 51.34375
+    },
+    "193068e5-76aa-481d-bd0a-f411205ce48c": {
+      "width": 107.3125,
+      "height": 53.34375
+    },
+    "8e8708d8-5053-4363-af76-c00f6756f24c": {
+      "width": 145.3125,
+      "height": 66.34375
+    },
+    "ba68231a-134c-4597-b6da-6b73c035bd0b": {
+      "width": 107.3125,
+      "height": 47.34375
+    },
+    "a3901cfc-43f7-4239-981b-53474b090f4c": {
+      "width": 121.3125,
+      "height": 53.34375
+    },
+    "42eae060-b8eb-43bb-85d7-60e16b0f1926": {
+      "width": 120.3125,
+      "height": 53.34375
+    },
+    "f70c1a7e-6621-4125-9910-604e624dac19": {
+      "width": 141.8125,
+      "height": 66.34375
+    },
+    "1c5ddbf4-7b05-4ad5-b316-22351c033e83": {
+      "width": 196.3125,
+      "height": 85.34375
+    },
+    "ad7ea60a-d550-45d5-840c-ed6c6f955ba7": {
+      "width": 111.8125,
+      "height": 55.34375
+    },
+    "1285027b-e398-465d-9ea8-ef3cecf83f2b": {
+      "width": 107.8125,
+      "height": 53.84375
+    },
+    "37154a6c-ea2b-420f-9f43-172d95d3dd8d": {
+      "width": 102.8125,
+      "height": 46.84375
+    },
+    "94761fa3-fe1c-4662-8534-f2cc00adcd7b": {
+      "width": 102.8125,
+      "height": 49.34375
+    },
+    "3174fb18-57c7-41df-86f0-341a0ece2c74": {
+      "width": 119.8486328125,
+      "height": 71.35104370117188
+    },
+    "b836e724-ff7c-45fc-b644-69dcd83cbbd6": {
+      "width": 116.847412109375,
+      "height": 69.85098266601562
+    },
+    "89f74193-a1b5-4f22-b98a-2a09e1d30636": {
+      "width": 122.8492431640625,
+      "height": 69.85098266601562
+    },
+    "e6e1a09a-53e7-4428-a6f2-3330f33b3f17": {
+      "width": 118.8480224609375,
+      "height": 66.85064697265625
+    }
+  },
+  "tool": "pistar.2.1.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 10 Nov 2026 11:49:53 GMT",
+  "diagram": {
+    "width": 1964,
+    "height": 1157,
+    "name": "Strategic Rationale Model",
+    "customProperties": {
+      "Description": ""
+    }
+  }
+}
