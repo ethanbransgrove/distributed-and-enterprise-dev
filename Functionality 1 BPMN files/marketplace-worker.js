@@ -101,6 +101,11 @@ function validateListing(v) {
     errors.push('Availability end must be on or after availability start.');
   }
 
+  const bestBefore = Date.parse(v.bestBeforeDate);
+  if (Number.isFinite(start) && Number.isFinite(bestBefore) && bestBefore <= start) {
+    errors.push('Best-before date has to be after availability start date.');
+  }
+
   return {
     isValid: errors.length === 0,
     validationErrors: errors.join('\n'),
