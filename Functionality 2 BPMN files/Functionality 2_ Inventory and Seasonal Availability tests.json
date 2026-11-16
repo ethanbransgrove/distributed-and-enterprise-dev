@@ -1,0 +1,195 @@
+{
+  "processId": "Process_08pzu33",
+  "testCases": [
+    {
+      "name": "Successful producer inventory update",
+      "description": "Tests a successful producer inventory update, including request preparation, product validation, availability determination, inventory saving and notification.",
+      "instructions": [
+        {
+          "type": "CREATE_PROCESS_INSTANCE",
+          "processDefinitionSelector": {
+            "processDefinitionId": "Process_08pzu33"
+          },
+          "variables": {}
+        },
+        {
+          "type": "COMPLETE_USER_TASK",
+          "userTaskSelector": {
+            "elementId": "Activity_1mlljxl"
+          },
+          "variables": {
+            "textfield_oq64wa": "P001",
+            "number_qyo7kp": 50,
+            "datetime_hjmfum": "2026-11-01",
+            "datetime_06m6mr": "2026-12-31"
+          }
+        },
+        {
+          "type": "COMPLETE_JOB",
+          "jobSelector": {
+            "elementId": "Activity_0j2f6ir",
+            "jobType": "prepare-producer-request"
+          },
+          "variables": {
+            "requestType": "producer",
+            "productId": "P001",
+            "stock": 50,
+            "seasonStart": "2026-11-01",
+            "seasonEnd": "2026-12-31"
+          }
+        },
+        {
+          "type": "COMPLETE_JOB",
+          "jobSelector": {
+            "elementId": "Activity_0onxu2e",
+            "jobType": "load-product-and-previous-result"
+          },
+          "variables": {
+            "alreadyProcessed": false
+          }
+        },
+        {
+          "type": "COMPLETE_JOB",
+          "jobSelector": {
+            "elementId": "Activity_1fhc5wm",
+            "jobType": "check-product-publication"
+          },
+          "variables": {
+            "published": true
+          }
+        },
+        {
+          "type": "COMPLETE_JOB",
+          "jobSelector": {
+            "elementId": "Activity_08j36ql",
+            "jobType": "stock-and-dates-validation"
+          },
+          "variables": {
+            "validUpdate": true
+          }
+        },
+        {
+          "type": "COMPLETE_JOB",
+          "jobSelector": {
+            "elementId": "Activity_054dlrl",
+            "jobType": "check-stock-and-season"
+          },
+          "variables": {
+            "availabilityStatus": "AVAILABLE"
+          }
+        },
+        {
+          "type": "COMPLETE_JOB",
+          "jobSelector": {
+            "elementId": "Activity_1wrsz18",
+            "jobType": "save-stock-status-and-audit-entry"
+          }
+        },
+        {
+          "type": "COMPLETE_JOB",
+          "jobSelector": {
+            "elementId": "Activity_0gvbk1l",
+            "jobType": "update-catalogue-availability"
+          }
+        },
+        {
+          "type": "COMPLETE_JOB",
+          "jobSelector": {
+            "elementId": "Activity_13mzbny",
+            "jobType": "send-order-result"
+          }
+        },
+        {
+          "type": "ASSERT_VARIABLES",
+          "processInstanceSelector": {
+            "processDefinitionId": "Process_08pzu33"
+          },
+          "variables": {
+            "availabilityStatus": "AVAILABLE"
+          }
+        }
+      ],
+      "metadata": {
+        "processInstanceId": "4503599681160723",
+        "coveredFlowNodes": [
+          {
+            "flowNodeId": "Event_12e8ib7",
+            "elementType": "bpmn:StartEvent"
+          },
+          {
+            "flowNodeId": "Activity_1mlljxl",
+            "elementType": "bpmn:UserTask"
+          },
+          {
+            "flowNodeId": "Activity_0j2f6ir",
+            "elementType": "bpmn:ServiceTask"
+          },
+          {
+            "flowNodeId": "Gateway_0m55jj7",
+            "elementType": "bpmn:ExclusiveGateway"
+          },
+          {
+            "flowNodeId": "Activity_0onxu2e",
+            "elementType": "bpmn:ServiceTask"
+          },
+          {
+            "flowNodeId": "Gateway_086grcn",
+            "elementType": "bpmn:ExclusiveGateway"
+          },
+          {
+            "flowNodeId": "Activity_1fhc5wm",
+            "elementType": "bpmn:ServiceTask"
+          },
+          {
+            "flowNodeId": "Gateway_0gv2tkv",
+            "elementType": "bpmn:ExclusiveGateway"
+          },
+          {
+            "flowNodeId": "Activity_08j36ql",
+            "elementType": "bpmn:ServiceTask"
+          },
+          {
+            "flowNodeId": "Gateway_1v520g7",
+            "elementType": "bpmn:ExclusiveGateway"
+          },
+          {
+            "flowNodeId": "Activity_054dlrl",
+            "elementType": "bpmn:ServiceTask"
+          },
+          {
+            "flowNodeId": "Activity_1wrsz18",
+            "elementType": "bpmn:ServiceTask"
+          },
+          {
+            "flowNodeId": "Activity_0gvbk1l",
+            "elementType": "bpmn:ServiceTask"
+          },
+          {
+            "flowNodeId": "Activity_13mzbny",
+            "elementType": "bpmn:ServiceTask"
+          },
+          {
+            "flowNodeId": "Event_133s9uv",
+            "elementType": "bpmn:EndEvent"
+          }
+        ],
+        "coveredSequenceFlows": [
+          "Flow_03c6oel",
+          "Flow_1tsy0ya",
+          "Flow_1sin3au",
+          "Flow_1dtdy4e",
+          "Flow_1t21ifc",
+          "Flow_1lkdbu3",
+          "Flow_18a3cuc",
+          "Flow_0gffmdb",
+          "Flow_1ic03et",
+          "Flow_1w1ftr3",
+          "Flow_0m2mi8f",
+          "Flow_0vo0pp4",
+          "Flow_0gk5zpt",
+          "Flow_1a7mqhz"
+        ]
+      }
+    }
+  ]
+}

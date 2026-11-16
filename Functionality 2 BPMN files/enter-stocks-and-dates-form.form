@@ -1,0 +1,100 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "64767e4"
+  },
+  "schemaVersion": 19,
+  "id": "Form_1wtnxne",
+  "components": [
+    {
+      "text": "**FUNCTIONALITY 2 / PRODUCER FORM 1**\n\n# Update inventory and seasonal availability\n\nEnter the new total stock and availability dates for an existing published product.\n\n\\* Required field",
+      "type": "text",
+      "layout": {
+        "row": "Row_0i4a56v",
+        "columns": null
+      },
+      "id": "Field_04h1a8o"
+    },
+    {
+      "label": "Product ID",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1da4n5s",
+        "columns": null
+      },
+      "id": "Field_1intba9",
+      "key": "textfield_oq64wa",
+      "description": "Enter the unique identifier of the existing product.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "New stock quantity",
+      "type": "number",
+      "layout": {
+        "row": "Row_06gm7ji",
+        "columns": null
+      },
+      "id": "Field_0sfr9ly",
+      "key": "number_qyo7kp",
+      "description": "Enter the total units available after this update. Enter 0 if sold out.",
+      "decimalDigits": 0,
+      "increment": "1",
+      "validate": {
+        "required": true,
+        "min": "0"
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Season start date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1bo83se",
+        "columns": null
+      },
+      "id": "Field_0yvn7h2",
+      "key": "datetime_hjmfum",
+      "description": "Select the first date on which the product is available for purchase",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Season end date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0bf5eue",
+        "columns": null
+      },
+      "id": "Field_06hpcv6",
+      "key": "datetime_06m6mr",
+      "description": "Select the last date on which the product is available. Must be on or after the start date.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "type": "separator",
+      "layout": {
+        "row": "Row_0p4qnaz",
+        "columns": null
+      },
+      "id": "Field_1bix3kw"
+    },
+    {
+      "text": "### How product availability is determined\n\nYour product will be available to customers only when:\n\n- The stock quantity is greater than zero\n- The current date is within the seasonal availability period.\n\nIf either condition is not met, the product will be marked as unavailable.\n\n**Please check your details before submitting.**",
+      "type": "text",
+      "layout": {
+        "row": "Row_0p4qnaz",
+        "columns": null
+      },
+      "id": "Field_1mlblti"
+    }
+  ],
+  "type": "default"
+}
