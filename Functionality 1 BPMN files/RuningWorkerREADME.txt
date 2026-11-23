@@ -5,9 +5,9 @@ REQUIREMENTS
 
 RUN IN POWERSHELL
 1. Open a new PowerShell window and change to the folder containing marketplace-worker.js.
-2. Run $env:CAMUNDA_CLIENT_ID = '' (enter your own keys)
-3. Run $env:CAMUNDA_CLIENT_SECRET = '' (enter your own keys)
-4. Run $env:CAMUNDA_REST_ADDRESS = '' (enter your own keys)
+2. Run $env:CAMUNDA_CLIENT_ID = '' (enter your own keys if run on camunda web)
+3. Run $env:CAMUNDA_CLIENT_SECRET = '' (enter your own keys if run on camunda web)
+4. Run $env:CAMUNDA_REST_ADDRESS = '' (enter your own keys if run on camunda web)
 5. Check Node.js:
       node --version
 6. Start the worker:
@@ -16,7 +16,7 @@ RUN IN POWERSHELL
 8. In Tasklist, start the Producer process (process ID: Process_0kdwa39).
 9. Open the generated task named 'Complete product listing form' and submit the product details.
 
-DEFAULT CONNECTION
+DEFAULT CONNECTION IF RUN ON LOCAL MACHINE
 The script connects to http://localhost:8080/v2, which is the default local
 Camunda 8 Run Orchestration Cluster REST API address. To change it, set:
       $env:CAMUNDA_API_URL = 'http://localhost:8081/v2'
