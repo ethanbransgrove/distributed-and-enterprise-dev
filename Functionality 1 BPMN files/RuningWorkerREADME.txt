@@ -5,13 +5,16 @@ REQUIREMENTS
 
 RUN IN POWERSHELL
 1. Open a new PowerShell window and change to the folder containing marketplace-worker.js.
-2. Check Node.js:
+2. Run $env:CAMUNDA_CLIENT_ID = '' (enter your own keys)
+3. Run $env:CAMUNDA_CLIENT_SECRET = '' (enter your own keys)
+4. Run $env:CAMUNDA_REST_ADDRESS = '' (enter your own keys)
+5. Check Node.js:
       node --version
-3. Start the worker:
+6. Start the worker:
       node .\marketplace-worker.js
-4. Leave this PowerShell window running while you test in Tasklist.
-5. In Tasklist, start the Producer process (process ID: Process_0kdwa39).
-6. Open the generated task named 'Complete product listing form' and submit the product details.
+7. Leave this PowerShell window running while you test in Tasklist.
+8. In Tasklist, start the Producer process (process ID: Process_0kdwa39).
+9. Open the generated task named 'Complete product listing form' and submit the product details.
 
 DEFAULT CONNECTION
 The script connects to http://localhost:8080/v2, which is the default local
